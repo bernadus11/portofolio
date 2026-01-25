@@ -7,7 +7,7 @@ function App() {
    <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1" id="beranda">
     <div className="animate__animated animate__fadeInLeft animate__delay-1s"> 
       <div className="flex items-center gap-3 bg-zinc-800 w-fit p-4 rounded-2xl ml-1">
-        <img src="/public/assets/masbernad.jpeg" alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
+        <img src="/assets/masbernad.jpeg" alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
         <q>Berusaha dan berkarya dalam segala hal bersama kami😊</q>
       </div>
       <h1
@@ -67,7 +67,7 @@ function App() {
     </div>
     </div>
     <img
-  src="/public/assets/masbernad.jpeg"
+  src="/assets/masbernad.jpeg"
   alt="Hero Image"
   className="
     w-[500px] rounded-2xl mx-auto
@@ -127,7 +127,7 @@ function App() {
         "
       >
     <img
-          src="/public/assets/profil.png"
+          src="/assets/profil.png"
           alt="ID Card"
           loading="lazy"
           className="w-full h-72 object-cover object-top"
@@ -148,9 +148,26 @@ function App() {
 
     {/* tools */}
     <div className="tools mt-32">
-    <h1 className="text-4xl/snug text-center font-bold mb-2" data-aos="fade-down" data-aos-duration="1000">Tools yang dipakai</h1>
-    <p className="xl:w-2/5 lg:2/4 mx-auto text-center md:w-2/3 sm:3/4 w-full text-base/loose opacity-50" data-aos="fade-down" 
-    data-aos-duration="1000" data-aos-delay="100">Berikut ini beberapa alat dan software yang sering saya gunakan</p>
+    <div className="group cursor-pointer">
+  <h1 className="
+    text-center text-4xl font-bold mb-2
+    text-white
+    transition-all duration-300
+    group-hover:text-zinc-400
+    group-hover:drop-shadow-[0_0_14px_rgba(59,130,246,0.9)]" data-aos="fade-down" data-aos-duration="1000">
+    Tools yang dipakai</h1>
+
+  <p className="
+    text-base/loose text-center
+    text-white/40
+    transition-all duration-300
+    group-hover:text-zinc-300 group-hover:opacity-80
+  " data-aos="fade-down"
+  data-aos-duration="1000" data-aos-delay="100"
+>
+   Berikut ini beberapa alat dan software yang sering saya gunakan
+  </p>
+</div>
     <div className="toolsbox mt-14 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
     {listTools.map(tool => (
        <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group"
@@ -167,16 +184,33 @@ function App() {
    </div>
 {/* Project Section */}
 <div className="project mt-32 py-10" id="project">
-  <h1 className="text-center text-4xl font-bold mb-2">Project</h1>
-  <p className="text-base/loose text-center opacity-40">
-    Berikut ini beberapa project yang telah saya buat
-  </p>
+  <div className="group cursor-pointer">
+  <h1 className="
+    text-center text-4xl font-bold mb-2
+    text-white
+    transition-all duration-300
+    group-hover:text-blue-400
+    group-hover:drop-shadow-[0_0_14px_rgba(59,130,246,0.9)]
+  " data-aos="fade-down" data-aos-duration="1000">
+    Project
+  </h1>
+
+  <p className="
+    text-base/loose text-center
+    text-white/40
+    transition-all duration-300
+    group-hover:text-blue-300 group-hover:opacity-80" 
+    data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+    Berikut ini beberapa project yang telah saya buat</p>
+</div>
+
 
   {/* GRID */}
-  <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 group">
+  <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 group" 
+  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="buttonText">
     {listProyek.map((proyek) => (
-      <div
-        key={proyek.id}
+      <div 
+      key={proyek.id}
         className="
           relative overflow-hidden rounded-2xl
           bg-zinc-900/80 backdrop-blur-md
