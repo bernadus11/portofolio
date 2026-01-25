@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+/* GOOGLE FONT ROBOT */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* ===== BACKGROUND ANIMASI KODE ===== */
+.code-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/public/assets/code.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+  animation: bgMove 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* ===== OVERLAY GELAP ===== */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,0,0,0.3), black);
+  z-index: 1;
+}
+
+/* ===== TEXT ROBOT ===== */
+.robot-text {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 4px;
+}
+
+/* ===== ANIMASI KETIK ===== */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #0ff;
+  animation: typing 4s steps(40, end), blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* ===== EFFECT GLITCH / KILAT ===== */
+.glitch {
+  position: relative;
+  color: #0ff;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.glitch::before {
+  animation: glitchTop 1.5s infinite linear alternate-reverse;
+  color: #f0f;
+  top: -2px;
+}
+
+.glitch::after {
+  animation: glitchBottom 1.2s infinite linear alternate-reverse;
+  color: #0f0;
+  top: 2px;
+}
+
+@keyframes glitchTop {
+  0% { clip-path: inset(0 0 90% 0); }
+  100% { clip-path: inset(0 0 20% 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip-path: inset(80% 0 0 0); }
+  100% { clip-path: inset(20% 0 0 0); }
+}
+
+/* ===== BUTTON START ===== */
+.start-btn {
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 14px 40px;
+  letter-spacing: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, #0ff, transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.start-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.start-btn:hover {
+  background: #0ff;
+  color: black;
+}
+/* ===== INTRO SLIDE EXIT (SMOOTH) ===== */
+.intro-exit {
+  animation: introSlideOut 2.1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes introSlideOut {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(100%) scale(1.05);
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
+/* LOCK SCROLL HANYA SAAT INTRO AKTIF */
+body.intro-active {
+  overflow: hidden;
+  height: 100vh;
+}
+.navbar {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.intro-active .navbar {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+/* ========================= */
+/* ===== MOBILE FIX ======== */
+/* ========================= */
+@media (max-width: 640px) {
+  /* BODY FIX */
+  body {
+    overflow-x: hidden;
+  }
+  .overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), black);
+  }
+
+  /* BACKGROUND */
+  .code-bg {
+    background-position: center;
+    animation: bgMove 35s linear infinite;
+  }
+
+  /* TEXT ROBOT */
+  .robot-text {
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  /* JUDUL / GLITCH */
+  .glitch {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    display: none; /* glitch berat di mobile */
+  }
+
+  /* TYPEWRITER */
+  .typewriter {
+    font-size: 0.9rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    text-align: center;
+  }
+
+  /* BUTTON */
+  .start-btn {
+    padding: 12px 28px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  /* INTRO CONTAINER */
+  .intro {
+    padding: 0 1.2rem;
+  }
+}
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(6deg); }
+  40% { transform: rotate(-6deg); }
+  60% { transform: rotate(4deg); }
+  80% { transform: rotate(-4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-swing {
+  animation: swing 0.8s ease-in-out;
+}
