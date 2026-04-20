@@ -24,7 +24,7 @@ const Intro = () => {
 
       <div className="relative z-10 px-4">
         <h1 className="robot-text text-cyan-400 text-sm sm:text-base md:text-2xl lg:text-3xl xl:text-4xl typewriter glitch leading-relaxed"
-  data-text="SELAMAT DATANG DI WEBSITE PORTOFOLIO SAYA">SELAMAT DATANG DI WEBSITE PORTOFOLIO SAYA</h1>
+  data-text="Welcome to My Portfolio Website">Welcome to My Portfolio Website</h1>
         <button
           onClick={handleStart}
           className="start-btn mt-12 robot-text"
