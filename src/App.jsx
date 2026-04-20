@@ -8,7 +8,7 @@ function App() {
     <div className="animate__animated animate__fadeInLeft animate__delay-1s"> 
       <div className="flex items-center gap-3 bg-zinc-800 w-fit p-4 rounded-2xl ml-1">
         <img src="/assets/masbernad.jpeg" alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
-        <q>Berusaha dan berkarya dalam segala hal bersama kami😊</q>
+        <q>Try and work in everything with us😊</q>
       </div>
       <h1
       className="
@@ -19,25 +19,24 @@ function App() {
         hover:scale-[1.02] transition duration-500
       "
     >
-      Hallo, saya Bernadus Dewanto Utoyo
+     Hello, I am Bernadus Dewanto Utoyo
     </h1>
 
     {/* P */}
-    <p className="
+   <p className="
   text-base md:text-lg mb-8 px-3 opacity-60
   leading-relaxed max-w-xl
   animate-[fadeUp_1s_ease-out]
 ">
- Bachelor of Engineering, Universitas Ngudi Waluyo,
-  dengan latar belakang pendidikan di bidang teknologi informasi serta minat
-  yang kuat pada pengembangan keterampilan kreatif dan teknis, meliputi
-  <span className="text-violet-400 font-semibold"> Sound Engineering</span>,
-  <span className="text-violet-400 font-semibold"> Design</span>,
-  <span className="text-violet-400 font-semibold"> Video Editing</span>,
-  <span className="text-violet-400 font-semibold"> Programming</span>,
-  serta <span className="text-violet-400 font-semibold">Music & Photography</span>.
+  Bachelor of Computer Science, Universitas Ngudi Waluyo,
+  a <span className="text-violet-400 font-semibold">Fullstack Web Developer</span> focused
+  on building modern web applications using
+  <span className="text-violet-400 font-semibold"> React</span> on the frontend,
+  <span className="text-violet-400 font-semibold"> Node.js</span> on the backend, and
+  <span className="text-violet-400 font-semibold"> MySQL</span> as the database. Experienced in
+  <span className="text-violet-400 font-semibold"> hosting via cPanel</span> and search engine optimization through
+  <span className="text-violet-400 font-semibold"> Google Search Console & SEO</span>.
 </p>
-
     <div className="flex flex-wrap items-center gap-5">
       <a
         href="https://cv-bernadusdw.my.canva.site/" target="blank"
@@ -46,10 +45,9 @@ function App() {
           bg-blue-600/80 backdrop-blur-md
           shadow-[0_0_25px_rgba(59,130,246,0.45)]
           hover:shadow-[0_0_45px_rgba(59,130,246,0.8)]
-          hover:scale-110 transition duration-500
-        "
+          hover:scale-110 transition duration-500"
       >
-        Lihat CV
+        View CV
       </a>
 
       <a
@@ -62,7 +60,7 @@ function App() {
           hover:scale-110 transition duration-500
         "
       >
-        Lihat Project
+        Show Project
       </a>
     </div>
     </div>
@@ -95,14 +93,11 @@ function App() {
     About Me
   </h2>
 
-      <p className="text-base/loose text-zinc-400">
-       Saya adalah lulusan Teknik Informatika Universitas Ngudi Waluyo dengan fokus pada pengembangan keterampilan di bidang 
-       teknologi dan industri kreatif. Saya memiliki pengalaman dalam Sound Engineering, desain visual 
-       menggunakan Canva, video editing, serta programming untuk mendukung kebutuhan digital. 
-       Ketertarikan saya pada music dan photography turut membentuk cara saya dalam memperhatikan detail, 
-       komposisi, dan kualitas visual, sehingga mampu menghasilkan solusi yang modern, efektif, dan sesuai 
-       dengan kebutuhan pengguna.
-      </p>
+     <p className="text-base/loose text-zinc-400">
+    I am a S1 graduate in Computer Engineering from Universitas Ngudi Waluyo with a GPA of 3.62 and a <em>Cumlaude</em> distinction. 
+    During my studies, I have gained experience building various real-world projects within UMKM and educational environments, 
+    making me familiar with the challenges and needs of the actual job market. I also hold a programmer competency certificate and a TOEFL Prediction score of 447, serving as evidence of my technical and professional communication readiness.
+  </p>
     </div>
 
     {/* ID CARD + LANYARD */}
@@ -155,7 +150,7 @@ function App() {
     transition-all duration-300
     group-hover:text-zinc-400
     group-hover:drop-shadow-[0_0_14px_rgba(59,130,246,0.9)]" data-aos="fade-down" data-aos-duration="1000">
-    Tools yang dipakai</h1>
+    Tools</h1>
 
   <p className="
     text-base/loose text-center
@@ -165,7 +160,7 @@ function App() {
   " data-aos="fade-down"
   data-aos-duration="1000" data-aos-delay="100"
 >
-   Berikut ini beberapa alat dan software yang sering saya gunakan
+   Here are some tools that I often use in developing projects.
   </p>
 </div>
     <div className="toolsbox mt-14 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -201,7 +196,7 @@ function App() {
     transition-all duration-300
     group-hover:text-blue-300 group-hover:opacity-80" 
     data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-    Berikut ini beberapa project yang telah saya buat</p>
+    Here are some projects that I have built</p>
 </div>
 
 
@@ -304,21 +299,21 @@ function App() {
   {/* Contact */}
   <div className="kontak mt-32 p-10" id="contact">
     <h1 className="text-4xl mb-2 font-bold text-center">Contact</h1>
-    <p className="text-base/loose text-center mb-10 opacity-50">Join with me</p>
+    <p className="text-base/loose text-center mb-10 opacity-50">Order my services</p>
     <form action="https://formsubmit.co/dewantoernad@gmail.com" method="POST" 
     className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off">
       <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
-        <label className="font-semibold">Nama Lengkap</label>
-        <input type="text" name="nama" placeholder="Masukkan Nama" className="border border-zinc-500 p-2 rounded-md" required />
+        <label className="font-semibold">Full Name</label>
+        <input type="text" name="nama" placeholder="Username" className="border border-zinc-500 p-2 rounded-md" required />
       </div>
       <div  className="flex flex-col gap-2">
         <label className="font-semibold">Email</label>
-        <input type="email" name="email" placeholder="Masukkan Email" className="border border-zinc-500 p-2 rounded-md" required />
+        <input type="email" name="email" placeholder="Email" className="border border-zinc-500 p-2 rounded-md" required />
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="pesan" className="font-semibold">Pesan</label>
-        <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan" className="border border-zinc-500 p-2 rounded-md" required></textarea>
+        <label htmlFor="pesan" className="font-semibold">Message</label>
+        <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Message" className="border border-zinc-500 p-2 rounded-md" required></textarea>
         </div>
       </div>
       <div className="text-center ">

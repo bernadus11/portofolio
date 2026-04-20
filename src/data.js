@@ -131,9 +131,9 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/project1.png";
+import Proyek1 from "/assets/proyek/6.jpg";
 import Proyek2 from "/assets/proyek/project2.png";
-import Proyek3 from "/assets/proyek/project3.png";
+import Proyek3 from "/assets/proyek/7.jpg";
 import Proyek4 from "/assets/proyek/project4.png";
 import Proyek5 from "/assets/proyek/project5.png";
 import Proyek6 from "/assets/proyek/project6.jpg";
@@ -142,29 +142,26 @@ export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Order Pesanan",
-    tools: ["HTML", "CSS", "PHP", "Javascript"],
+    nama: "POS cashier system for MSMEs",
+    tools: ["React.js", "Node.js", "MySQL", "Bootstrap"],
     dad: "200",
-    link : "https://github.com/bernadus11/app-penjualan.git",
-    buttonText: "Lihat Source Code"
+    buttonText: "Demo on Request"
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Website absensi CRUD",
+    nama: "Attendance system for schools",
     tools: ["HTML", "CSS", "Javascript", "Nodejs", "Bootstrap", "Expressjs"],
-    dad: "300",
-    link : "https://github.com/bernadus11/testaplikasi.git",
-    buttonText: "Lihat Source Code"
+    dad: "300", 
+    buttonText: "Demo on Request"
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Landing Page Company Profile",
-    tools: ["Html", "CSS", "Bootstrap",],
+    nama: "Saas Application Convert audio",
+    tools: ["React.js", "Node.js", "tailwind.css"],
     dad: "400",
-    link : "https://github.com/bernadus11/landing-page.git",
-    buttonText: "Lihat Source Code"
+    buttonText: "Demo on Request"
   },
   {
     id: 4,
