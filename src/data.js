@@ -35,7 +35,7 @@ export const listTools = [
     id: 2,
     gambar: Tools2,
     nama: "React JS",
-    ket: "Framework",
+    ket: "Library",
     dad: "200",
   },
   {
