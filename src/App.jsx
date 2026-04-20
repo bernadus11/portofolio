@@ -317,7 +317,7 @@ function App() {
         </div>
       </div>
       <div className="text-center ">
-        <button type="submit" className="bg-violet-700 p-3 mt-3 rounded-lg w-full cursor-pointer border-zinc-600 hover:bg-violet-600">Kirim Pesan</button>
+        <button type="submit" className="bg-violet-700 p-3 mt-3 rounded-lg w-full cursor-pointer border-zinc-600 hover:bg-violet-600">Send Message</button>
       </div>
     </form>
   </div>
