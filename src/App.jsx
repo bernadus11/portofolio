@@ -273,14 +273,12 @@ function App() {
 
           {/* BUTTON */}
           <div className="mt-8 text-center">
-            <a href="#contact" className="inline-block w-full
-               rounded-xl py-3 font-semibold
-                bg-gradient-to-r from-violet-600 to-fuchsia-600
-                text-white
-                hover:from-violet-500 hover:to-fuchsia-500
-                transition-all duration-300
-              "
-            >
+           <a href={proyek.link}
+          target={proyek.link.startsWith("http") ? "_blank" : "_self"} rel="noopener noreferrer"className="inline-block w-full
+          rounded-xl py-3 font-semibold
+          bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white
+          hover:from-violet-500 hover:to-fuchsia-500
+          transition-all duration-300">
               {proyek.buttonText}
             </a>
           </div>

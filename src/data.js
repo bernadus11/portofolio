@@ -156,6 +156,7 @@ export const listProyek = [
     nama: "POS cashier system for MSMEs",
     tools: ["React.js", "Node.js", "MySQL", "Bootstrap"],
     dad: "200",
+    link : "#contact",
     buttonText: "Request a Demo"
   },
   {
@@ -164,6 +165,7 @@ export const listProyek = [
     nama: "Attendance system for schools",
     tools: ["HTML", "CSS", "Javascript", "Nodejs", "Bootstrap", "Expressjs"],
     dad: "300", 
+    link : "#contact",
     buttonText: "Request a Demo"
   },
   {
@@ -172,6 +174,7 @@ export const listProyek = [
     nama: "Saas Application Convert audio",
     tools: ["React.js", "Node.js", "tailwind.css"],
     dad: "400",
+    link : "#contact",
     buttonText: "Request a Demo"
   },
   {
