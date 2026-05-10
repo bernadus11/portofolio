@@ -160,10 +160,10 @@ function App() {
   " data-aos="fade-down"
   data-aos-duration="1000" data-aos-delay="100"
 >
-   Here are some tools that I often use in developing projects.
+   Software & Tools I Often Use for Production
   </p>
 </div>
-    <div className="toolsbox mt-14 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
+    <div className="toolsbox mt-14 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
     {listTools.map(tool => (
        <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group"
        key={tool.id} data-aos="fade-down" data-aos-duration="1500" data-aos-delay="tool.dad">
@@ -196,7 +196,7 @@ function App() {
     transition-all duration-300
     group-hover:text-blue-300 group-hover:opacity-80" 
     data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-    Here are some projects that I have built</p>
+    My Project Catalog: Frontend to Full-Stack Development</p>
 </div>
 
 
@@ -273,13 +273,8 @@ function App() {
 
           {/* BUTTON */}
           <div className="mt-8 text-center">
-            <a
-              href={proyek.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                inline-block w-full
-                rounded-xl py-3 font-semibold
+            <a href="#contact" className="inline-block w-full
+               rounded-xl py-3 font-semibold
                 bg-gradient-to-r from-violet-600 to-fuchsia-600
                 text-white
                 hover:from-violet-500 hover:to-fuchsia-500

@@ -15,12 +15,15 @@ import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
 import Tools9 from "/assets/tools/mysql.png";
-import Tools10 from "/assets/tools/canva.png";
-import Tools11 from "/assets/tools/figma.png";
-import Tools12 from "/assets/tools/premiere.png";
-import Tools13 from "/assets/tools/capcut.png";
-import Tools14 from "/assets/tools/audition.png";
-import Tools15 from "/assets/tools/studio.png";
+import Tools10 from "/assets/tools/supabase.jpeg";
+import Tools11 from "/assets/tools/canva.png";
+import Tools12 from "/assets/tools/figma.png";
+import Tools13 from "/assets/tools/premiere.png";
+import Tools14 from "/assets/tools/capcut.png";
+import Tools15 from "/assets/tools/audition.png";
+import Tools16 from "/assets/tools/studio.png";
+
+
 
 
 export const listTools = [
@@ -87,48 +90,56 @@ export const listTools = [
     ket: "Database",
     dad: "900",
   },
-  {
+    {
     id: 10,
     gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
+    nama: "Supabase",
+    ket: "Database",
     dad: "1000",
   },
   {
     id: 11,
     gambar: Tools11,
-    nama: "Figma",
+    nama: "Canva",
     ket: "Design App",
     dad: "1100",
   },
   {
     id: 12,
     gambar: Tools12,
-    nama: "premiere",
-    ket: "Video Editing",
+    nama: "Figma",
+    ket: "Design App",
     dad: "1200",
   },
   {
     id: 13,
     gambar: Tools13,
-    nama: "capcut",
+    nama: "premiere",
     ket: "Video Editing",
     dad: "1300",
   },
   {
     id: 14,
     gambar: Tools14,
-    nama: "audition",
-    ket: "Sound Engineer",
+    nama: "capcut",
+    ket: "Video Editing",
     dad: "1400",
   },
   {
     id: 15,
     gambar: Tools15,
-    nama: "Studio One",
+    nama: "audition",
     ket: "Sound Engineer",
     dad: "1500",
   },
+  {
+    id: 16,
+    gambar: Tools16,
+    nama: "Studio One",
+    ket: "Sound Engineer",
+    dad: "1600",
+  },
+
 ];
 
 import Proyek1 from "/assets/proyek/6.jpg";
@@ -145,7 +156,7 @@ export const listProyek = [
     nama: "POS cashier system for MSMEs",
     tools: ["React.js", "Node.js", "MySQL", "Bootstrap"],
     dad: "200",
-    buttonText: "Demo on Request"
+    buttonText: "Request a Demo"
   },
   {
     id: 2,
@@ -153,7 +164,7 @@ export const listProyek = [
     nama: "Attendance system for schools",
     tools: ["HTML", "CSS", "Javascript", "Nodejs", "Bootstrap", "Expressjs"],
     dad: "300", 
-    buttonText: "Demo on Request"
+    buttonText: "Request a Demo"
   },
   {
     id: 3,
@@ -161,7 +172,7 @@ export const listProyek = [
     nama: "Saas Application Convert audio",
     tools: ["React.js", "Node.js", "tailwind.css"],
     dad: "400",
-    buttonText: "Demo on Request"
+    buttonText: "Request a Demo"
   },
   {
     id: 4,
@@ -170,7 +181,7 @@ export const listProyek = [
     tools: ["Studio One"],
     dad: "500",
     link: "https://drive.google.com/drive/folders/1V5qwbNJrrINkMTPtNBxPUtWnd4-b90_T?usp=drive_link",
-    buttonText: "Lihat Project",
+    buttonText: "Show Project",
   },
   {
     id: 5,
@@ -179,7 +190,7 @@ export const listProyek = [
     tools: ["Adobe Audition"],
     dad: "600",
     link: "https://drive.google.com/drive/folders/1Oo-QqfbGaiLOlfE3opINMlUoTQdwvI0J?usp=drive_link",
-    buttonText: "Lihat Project"
+    buttonText: "Show Project"
   },
   {
     id: 6,
@@ -188,6 +199,6 @@ export const listProyek = [
     tools: ["Canva"],
     dad: "700",
     link: "https://drive.google.com/drive/folders/1jVV_oyziIVqyc_aNVt7iHbm_sZcwXcze?usp=drive_link",
-    buttonText: "Lihat Project"
+    buttonText: "Show Project"
   },
 ];
